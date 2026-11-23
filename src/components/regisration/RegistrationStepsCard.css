@@ -1,0 +1,51 @@
+.registration-card {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 40px;
+  border-radius: 16px;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.icon-wrapper {
+  background-color: rgba(255, 140, 0, 0.2);
+  color: #ff8c00;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  min-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-item h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.step-item p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #dcdcdc;
+}

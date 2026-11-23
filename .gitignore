@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+
+# Local environment overrides
+.env.local
+.env.*.local
+
+# Local TLS certificates and private keys
+*.pem
+*.key
+
+# Logs and local tooling
+*.log
+.vite/
+.DS_Store
+Thumbs.db
