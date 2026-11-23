@@ -16,15 +16,15 @@ const HeroSection = () =>
           This Site contains graphics, photographs, images, document layouts,
           artwork, text, fonts, music, software tools, and other information
           (referred to herein as “Content”). This Site and all Content are the
-          copyrighted property of Shree Maruthi Printers, and/or its
-          subsidiaries (referred to herein as “Shree Maruthi Printers”) or the
-          copyrighted property of parties from whom Shree Maruthi Printers has
+          copyrighted property of Gokul Printers, and/or its
+          subsidiaries (referred to herein as “Gokul Printers”) or the
+          copyrighted property of parties from whom Gokul Printers has
           licensed such property. All rights in this Site and its Content are
           reserved worldwide. It is strictly prohibited to retain, copy,
           distribute, publish, or use any portion of the Content except as
-          expressly allowed in these Terms of Use. Shree Maruthi Printers
+          expressly allowed in these Terms of Use. Gokul Printers
           reserves the right to add to, delete from, or modify any part of
-          Content at any time without prior notice. Shree Maruthi Printers
+          Content at any time without prior notice. Gokul Printers
           provides no warranty of any kind that logo designs created using the
           design tools will not infringe, or be subject to a claim of
           infringing, the trademark or other rights of another party. It is
@@ -36,12 +36,12 @@ const HeroSection = () =>
         <p className="text-justify leading-8  mb-4">
           You are granted permission to access and use this Site and its
           Content for the sole purpose of preparing, evaluating, and ordering
-          products or services solely through Shree Maruthi Printers (referred
+          products or services solely through Gokul Printers (referred
           to herein as “Products”). No other download, retention, use,
           publication, or distribution of any portion of the Content is
-          authorized or permitted. Obtaining Products from Shree Maruthi
+          authorized or permitted. Obtaining Products from Gokul Printers
           Printers does not entitle you to use any portion of Content apart
-          from the finished Products as they are supplied by Shree Maruthi
+          from the finished Products as they are supplied by Gokul Printers
           Printers.
           <br />
           You agree to use this Site in a responsible manner that is in full
@@ -54,9 +54,9 @@ const HeroSection = () =>
           service mark or other intellectual property right of any person or
           entity. You agree that you will not use the Site to produce Products
           that are offensive, unlawful, harassing, libelous, threatening,
-          harmful, obscene, malicious or otherwise objectionable. Shree
-          Maruthi Printers may terminate its service to customers found to be
-          using Shree Maruthi Printers to engage in undesirable activities.
+          harmful, obscene, malicious or otherwise objectionable. Gokul Printers
+          may terminate its service to customers found to be
+          using Gokul Printers to engage in undesirable activities.
           <br />
           You are solely responsible for your use of Content in combination
           with any other images, graphics, text or other materials you
@@ -70,13 +70,13 @@ const HeroSection = () =>
           required rights or permissions necessary to incorporate third party
           material into your Products. By placing an order on this Site, you
           warrant that you have all necessary permission, right and authority
-          to place the order and you authorize Shree Maruthi Printers to
+          to place the order and you authorize Gokul Printers to
           produce the Products on your behalf.
           <br />
           You may not use this Site to send or use e-cards in any manner that
           would constitute the transmission of Spam or unsolicited e-mails.
           You may not use scripting or other programs to automate the creation
-          and/or transmission of e-cards. Shree Maruthi Printers reserves the
+          and/or transmission of e-cards. Gokul Printers reserves the
           right, in its sole discretion, at any time, and without prior
           notice, to limit the number of recipients to which you may send an
           e-card and/or limit the number of e-cards that you may send. You
@@ -87,7 +87,7 @@ const HeroSection = () =>
         </p>
         <span className="text-lg font-semibold mb-4">Security</span>
         <p className="text-justify leading-8  mb-4">
-          The www.shreemaruthiprinters.com website is an Internet based
+          The www.gokulprinters.com website is an Internet based
           content and e-commerce portal a company incorporated under the laws
           of India. Use of the Website is offered to you conditioned on
           acceptance without modification of all the terms, conditions and
@@ -102,17 +102,17 @@ const HeroSection = () =>
           the Website's registration process. You are responsible for
           maintaining the confidentiality of the password and account, and are
           fully responsible for all activities that occur under your password
-          or account. You agree to immediately notify shree maruthi printers
+          or account. You agree to immediately notify Gokul Printers
           of any unauthorized use of your password or account or any other
           breach of security, and ensure that you exit from your account at
-          the end of each session. Shree Maruthi Printers cannot and will not
+          the end of each session. Gokul Printers cannot and will not
           be liable for any loss or damage arising from your failure to comply
           with this Section.
         </p>
         <span className="text-lg font-semibold mb-4">Privacy Policy</span>
         <p className="text-justify leading-8  mb-4">
           The User hereby consents, expresses and agrees that user has read
-          and fully understands the Privacy Policy of Shree maruthi Printers
+          and fully understands the Privacy Policy of Gokul Printers
           Website. The user further consents that the terms and contents of
           such Privacy Policy are acceptable to the user.
         </p>
@@ -120,7 +120,7 @@ const HeroSection = () =>
           Printing Error Resolution
         </span>
         <p className="text-justify leading-8  mb-4">
-          Shree Maruthi Printers does not check any submission for spelling,
+          Gokul Printers does not check any submission for spelling,
           grammar, or any other errors. The design will be printed as it
           appears during the approval step. It is your responsibility to
           ensure that all materials submitted for printing are formatted
@@ -159,13 +159,13 @@ const HeroSection = () =>
           Limited Warranty for Products Ordered
         </span>
         <p className="text-justify leading-8 mb-4">
-          Shree Maruthi Printers guarantees prints you order and pay for will
+          Gokul Printers guarantees prints you order and pay for will
           be in accordance with CMYK industry standards for pleasing colour.
           We offer no guarantee of "match-print" colour fidelity and cannot
-          prevent slight colour shift throughout an order. Shree Maruthi
-          Printers does not guarantee colour will match the preview as it
-          appears on a customer's monitor, because monitor colours vary. Shree
-          Maruthi Printers is not responsible for any colour shift that occurs
+          prevent slight colour shift throughout an order. Gokul Printers
+          does not guarantee colour will match the preview as it
+          appears on a customer's monitor, because monitor colours vary. Gokul
+          Printers is not responsible for any colour shift that occurs
           in conversions from RGB to CMYK colour modes. We recommend all
           custom designs be designed in CMYK and uploaded in CMYK. You may
           also upload in RGB if you choose, but the colour will be converted
@@ -174,9 +174,9 @@ const HeroSection = () =>
           accuracy.
           <br />
           Orders will not be defective due to printing errors, coating errors,
-          cutting errors, or bindery errors if they were designed within Shree
-          Maruthi Printers design specifications. You may not be able to print
-          or write on the product after purchase. Shree Maruthi Printers'
+          cutting errors, or bindery errors if they were designed within Gokul
+          Printers design specifications. You may not be able to print
+          or write on the product after purchase. Gokul Printers'
           products are often coated and can be difficult to print on. UV
           coated products cannot be printed on while matte covered products
           may require commercial printers. Satin matte finish allows for
@@ -184,12 +184,12 @@ const HeroSection = () =>
           responsibility to test using a sample and verify that your printer
           or pen will work before placing an order.
           <br />
-          Shree Maruthi Printers cannot be held responsible for un-usable QR
+          Gokul Printers cannot be held responsible for un-usable QR
           codes and /or Microsoft Tags after print. Please test the code with
           the application before file submission. Immediately upon receipt you
           should inspect all Products to ensure there are no defects and that
-          the order is complete. If a print is found to be defective, Shree
-          Maruthi Printers require fanned out photos to show a sampling of the
+          the order is complete. If a print is found to be defective, Gokul
+          Printers requires fanned out photos to show a sampling of the
           defective product from the front, middle, and end of the package(s)
           prior to taking any action.
           <br />
@@ -263,44 +263,44 @@ const HeroSection = () =>
         </p>
         <span className="text-lg font-semibold mb-4">Shipping</span>
         <p className="text-justify leading-8  mb-4">
-          Shree Maruthi Printers will arrange for shipping with a reputed
-          carrier. Shree Maruthi Printers will not be responsible for the
+          Gokul Printers will arrange for shipping with a reputed
+          carrier. Gokul Printers will not be responsible for the
           delay in delivery, loss while the order is with the shipping
           carrier.{" "}
         </p>
         <span className="text-lg font-semibold mb-4">Defective Products</span>
         <p className="text-justify leading-8  mb-4">
-          Shree Maruthi Printers must be contacted via e-mail at
+          Gokul Printers must be contacted via e-mail at
           complaints.smp@gmail.com or by phone at 7358992255 & 7397739633
           (Tamil Nadu) | 8220118444 (Kerala) | 7397132333 & 9500511255 (Other
-          States) within 7 days of receiving your order. Shree Maruthi
-          printers require fanned out photos / videos to show a sampling of
+          States) within 7 days of receiving your order. Gokul Printers
+          requires fanned out photos / videos to show a sampling of
           the defective product from the front, middle, and end of the
           package(s) prior to taking any action. <br /> If the product is not
-          deemed defective, and customer chooses to keep the product, Shree
-          Maruthi Printers can issue a 50% store credit for the product cost
+          deemed defective, and customer chooses to keep the product, Gokul
+          Printers can issue a 50% store credit for the product cost
           towards a future order. If the product is deemed defective, and of
-          Shree Maruthi Printers error, we will reprint the order with the
+          Gokul Printers error, we will reprint the order with the
           same delivery terms ordered.
           <br /> Since each order is custom made to customer and has no
           re-sale value, All Sales Are Final. Full refunds are only authorized
           with a Return Merchandise Authorization (RMA) Label based on Manager
-          Discretion. Shree Maruthi Printers will issue an Order number so the
-          defective product can be returned for a full refund, but Shree
-          Maruthi Printers is not responsible for added pick-up or service
+          Discretion. Gokul Printers will issue an Order number so the
+          defective product can be returned for a full refund, but Gokul
+          Printers is not responsible for added pick-up or service
           fees. Orders that are returned without prior authorization will not
           be eligible for compensation. All authorized RMAs will go through a
           Quality Control check prior to the compensation being issued. All
           defective merchandise, including any and all reprints of the
           defective set(s) must be returned with an RMA in order to receive a
           full refund on the defective product ordered.
-          <br /> Shree Maruthi Printers does not offer any compensation for
+          <br /> Gokul Printers does not offer any compensation for
           customer errors under Limited Warranty for Products Ordered.
         </p>
         <span className="text-lg font-semibold mb-4">Miscellaneous</span>
         <p className="text-justify leading-8  mb-4">
           These Terms of Service are not assignable or transferable by you
-          without the prior written consent of Shree Maruthi Printers. These
+          without the prior written consent of Gokul Printers. These
           Terms of Service (including all of the policies and other Agreements
           described in this Terms of Service, which are incorporated herein by
           this reference) contain the entire understanding of the parties
@@ -310,8 +310,8 @@ const HeroSection = () =>
           exercising any right, power or privilege will operate as a waiver
           thereof, nor will any single or partial exercise of any right, power
           or privilege preclude any other or further exercise thereof or the
-          exercise of any other such right, power, or privilege. You and Shree
-          Maruthi Printers are independent contractors, and no agency,
+          exercise of any other such right, power, or privilege. You and Gokul
+          Printers are independent contractors, and no agency,
           partnership, joint venture, or employee-employer relationship is
           intended or created by these Terms of Service.
         </p>

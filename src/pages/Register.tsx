@@ -41,7 +41,6 @@ import { Link } from "react-router";
 import { useAuth } from "@/hooks/use-auth";
 import AddressPicker from "@/components/address-picker/address-picker";
 import PasswordInput from "@/components/ui/password-input";
-import { useTheme } from "@/hooks/use-theme";
 import { Separator } from "@/components/ui/separator";
 
 const optionItemSchmea = z.object({
@@ -110,7 +109,6 @@ const formSchema = z
   });
 
 export default function Register() {
-  const { theme } = useTheme();
   const navigate = useNavigate();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -153,16 +151,12 @@ export default function Register() {
               <img
                 loading="lazy"
                 decoding="async"
-                src={
-                  theme == "light"
-                    ? "/images/logo.light.png"
-                    : "/images/logo.dark.png"
-                }
-                alt="Shree Maruthi Printers"
+                src="/images/logo.svg"
+                alt="Gokul Printers"
                 className="size-32 w-auto m-auto"
               />
               {/* <h1 className="font-display text-xl font-bold">
-                Shree Maruthi Printers
+                Gokul Printers
               </h1> */}
             </div>
             <h2 className="mt-8 font-display text-2xl font-bold">Register</h2>

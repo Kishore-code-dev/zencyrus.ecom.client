@@ -14,7 +14,7 @@ const AccountDeletionPolicy = () =>
                     Policy for Account Deletion
                 </span>
                 <p className="text-justify leading-8 mb-4">
-                    Shree Maruthi Printers respects your right to request deletion of your
+                    Gokul Printers respects your right to request deletion of your
                     account at any time. When you request account deletion, we will
                     permanently remove your personal details, including your name, contact
                     number, email address, saved addresses, and login credentials, from
@@ -52,10 +52,10 @@ const AccountDeletionPolicy = () =>
                     </a>{" "}
                     or drop an email at{" "}
 
-                    <a href="mailto:support@shreemaruthiprinters.com"
+                    <a href="mailto:support@gokulprinters.com"
                         className="text-blue-600 underline"
                     >
-                        support@shreemaruthiprinters.com
+                        support@gokulprinters.com
                     </a>{" "}
                     with the subject line "Account Deletion Request".
                     <br />

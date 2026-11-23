@@ -3,22 +3,12 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBanner from "@/assets/hero-banner.jpg";
 import { useNavigate } from "react-router";
-import { useState, useEffect } from "react";
+import { useAuth } from "@/hooks/use-auth";
 const HeroSection = () =>
 {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-
-  useEffect(() =>
-  {
-    const user = localStorage.getItem("shree_maruthi_printers_auth");
-
-    if (user)
-    {
-      const parsedUser = JSON.parse(user);
-      setUsername(parsedUser.name);
-    }
-  }, []);
+  const { user } = useAuth();
+  const username = user?.name ?? "";
 
   return (
     <section className="relative overflow-hidden">
@@ -28,7 +18,7 @@ const HeroSection = () =>
           loading="lazy"
           decoding="async"
           src={heroBanner}
-          alt="Shree Maruthi Printers - Professional Printing Services"
+          alt="Gokul Printers - Professional Printing Services"
           className="absolute inset-0 w-full h-full object-cover"
         />
 

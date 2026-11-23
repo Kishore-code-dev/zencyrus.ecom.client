@@ -116,7 +116,7 @@ export default function Contact()
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Shree Maruthi Printers Location"
+                  title="Gokul Printers Location"
                 />
               </Card>
             </div>

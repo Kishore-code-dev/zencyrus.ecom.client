@@ -13,10 +13,10 @@ const AbouUsSection = () =>
                 First in Tamil Nadu - 10 Color Offset Machine
               </div>
               <h2 className="font-display text-3xl font-bold sm:text-4xl">
-                About Shree Maruthi Printers
+                About Gokul Printers
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Shree Maruthi Printers is an exclusive factory for printers and
+                Gokul Printers is an exclusive factory for printers and
                 DTP operators across various cities and states throughout India.
                 Our products range from business cards, envelopes, letterheads,
                 manuals and similar office stationery items to flyers,

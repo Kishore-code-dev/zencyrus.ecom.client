@@ -6,7 +6,7 @@ export default function PaymentQRCode()
             <img
                 loading="lazy"
                 decoding="async" src={QRCode} className="bg-cover aspect-auto size-40 rounded-md m-auto" />
-            <span className="text-sm font-semibold mx-auto">Shree Maruthi Printer</span>
+            <span className="text-sm font-semibold mx-auto">Gokul Printers</span>
         </div>
     )
 }

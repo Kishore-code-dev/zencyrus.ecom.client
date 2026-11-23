@@ -87,7 +87,7 @@ export interface AuthProviderProps {
 export interface AuthContextValue {
     user: AuthUser | null;
     isAuthenticated: boolean;
-    signInAsync: (payload: SignIn) => Promise<void>;
+    signInAsync: (payload: SignIn) => Promise<boolean>;
     signUpAsync: (payload: SignUp) => Promise<void>;
     signOutAsync: () => Promise<void>;
 }

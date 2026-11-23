@@ -22,7 +22,7 @@ const faqSections = [
         a: "After completing the registration form, your mobile number will be verified with OTP (you can click RESEND OTP if you didn't receive the OTP SMS) and then a confirmation mail will be sent to the registered E-mail ID. You have to confirm the account by clicking 'CONFIRM ACCOUNT' button found in the confirmation mail. This confirmation mail will be in the inbox or it will be in the Promotion / Updates tab or in Spam if your mail account is a Gmail account. Once you confirm your account it will take 24 hours for admin verification. You will be receiving a call from us asking for the details about your firm, once the details are found to be authentic and satisfactory the account will be activated. You can login only after the account confirmation done from our side. We strongly recommend that our customer must be a Printers / Designers with good knowledge in Offset Printing.",
       },
       {
-        q: "Can I change the email address in my Shree Maruthi Printers online account?",
+        q: "Can I change the email address in my Gokul Printers online account?",
         a: "The email address that you have registered with us is your Login ID, this ID cannot be changed or edited. If you need to use a different email address you will need to create a new online account with the desired address.",
       },
       {
@@ -64,8 +64,8 @@ const faqSections = [
         a: 'After you complete the checkout process, a page will appear showing "YOUR ORDER HAS BEEN RECEIVED. THANK YOU FOR YOUR PURCHASE" and your order number will be shown (starting with "M"). You will also receive confirmation via e-mail.',
       },
       {
-        q: "Does Shree Maruthi Printers do any editing / design changes in the file after placing order?",
-        a: "Shree Maruthi Printers is a print only service and does not make any changes in the Customer files. If you have any changes in the art-work after placing an order, you can call our Online Customer Helpline and can cancel the order if the Set is not taken. Cancelled order amount will be refunded to wallet and then you can place the order again with the new corrected design.",
+        q: "Does Gokul Printers do any editing / design changes in the file after placing order?",
+        a: "Gokul Printers is a print only service and does not make any changes in the Customer files. If you have any changes in the art-work after placing an order, you can call our Online Customer Helpline and can cancel the order if the Set is not taken. Cancelled order amount will be refunded to wallet and then you can place the order again with the new corrected design.",
       },
       {
         q: "Can I re-order?",
@@ -73,7 +73,7 @@ const faqSections = [
       },
       {
         q: "Can I place an order any other way than online?",
-        a: "Shree Maruthi Printers receives orders through online from Customers. Only for Products that are not available in the website you can place orders through Email. You can get the quotation from the quotation section and Art-work can be sent through Email with the payment challan / screenshot attached. Refer Contact Us page for details.",
+        a: "Gokul Printers receives orders through online from Customers. Only for Products that are not available in the website you can place orders through Email. You can get the quotation from the quotation section and Art-work can be sent through Email with the payment challan / screenshot attached. Refer Contact Us page for details.",
       },
       {
         q: "Where can I check the details on the order?",
@@ -98,8 +98,8 @@ const faqSections = [
         a: "Yes you can. Please use the Bank account details given in My Account → My Wallet → Add Wallet Challan to send your payment. After sending the amount, take the Screenshot of the Success Payment and upload the challan. Verification takes four hours. Upload before 4:30 PM for same-day credit.",
       },
       {
-        q: "Does Shree Maruthi Printers keep my Credit Card info on file?",
-        a: "Shree Maruthi Printers uses a 3rd party merchant service to process all credit card / debit card / internet banking payments, so no payment information is stored on our side. Each order requires that you re-enter your payment information.",
+        q: "Does Gokul Printers keep my Credit Card info on file?",
+        a: "Gokul Printers uses a 3rd party merchant service to process all credit card / debit card / internet banking payments, so no payment information is stored on our side. Each order requires that you re-enter your payment information.",
       },
       {
         q: "Amount was debited but order status shows cancelled / pending. Will I get my money back?",
@@ -129,7 +129,7 @@ const faqSections = [
       },
       {
         q: "What is the Overprint function and when should it be used?",
-        a: 'When two objects of different colours overlap, they knockout — they will not print on top of each other. To intentionally print one layer of ink on top of another is to overprint. This can be useful to eliminate gaps between touching colours. Use with caution — incorrect use can produce unwanted results. Shree Maruthi Printers will not compensate for misuse of the "overprint" function.',
+        a: 'When two objects of different colours overlap, they knockout — they will not print on top of each other. To intentionally print one layer of ink on top of another is to overprint. This can be useful to eliminate gaps between touching colours. Use with caution — incorrect use can produce unwanted results. Gokul Printers will not compensate for misuse of the "overprint" function.',
       },
       {
         q: "Can I upload Horizontal front and vertical back or vice-versa?",
@@ -137,7 +137,7 @@ const faqSections = [
       },
       {
         q: "How do I make sure that my fonts appear as I have created them?",
-        a: "Shree Maruthi Printers does not have the fonts that you have used in your design. You have to curve all the texts / follow the video — How to convert .cdr to .pdf available in our YouTube channel / Video Tutorial.",
+        a: "Gokul Printers does not have the fonts that you have used in your design. You have to curve all the texts / follow the video — How to convert .cdr to .pdf available in our YouTube channel / Video Tutorial.",
       },
       {
         q: "What black value do you recommend? What is solid black?",
@@ -149,7 +149,7 @@ const faqSections = [
       },
       {
         q: "Will my QR code scan?",
-        a: "QR codes are considered as design, and Shree Maruthi Printers will not be held responsible for codes that do not scan properly. We cannot compensate for QR readers and/or software.",
+        a: "QR codes are considered as design, and Gokul Printers will not be held responsible for codes that do not scan properly. We cannot compensate for QR readers and/or software.",
       },
     ],
   },
@@ -159,7 +159,7 @@ const faqSections = [
     faqs: [
       {
         q: "What is CMYK offset Printing?",
-        a: "Shree Maruthi Printers is a CMYK offset gang printing service. We do not match Pantone colours and recommend that all files be created in CMYK (not just converted). CMYK stands for Cyan, Magenta, Yellow and Key (Black). RGB (Red, Green, Blue) is used by monitors and has a larger colour range — colours may look different when printed in CMYK. If you send RGB files they will be automatically converted to CMYK, which may cause colour shifts.",
+        a: "Gokul Printers is a CMYK offset gang printing service. We do not match Pantone colours and recommend that all files be created in CMYK (not just converted). CMYK stands for Cyan, Magenta, Yellow and Key (Black). RGB (Red, Green, Blue) is used by monitors and has a larger colour range — colours may look different when printed in CMYK. If you send RGB files they will be automatically converted to CMYK, which may cause colour shifts.",
       },
       {
         q: "What is gang printing?",
@@ -167,7 +167,7 @@ const faqSections = [
       },
       {
         q: "Do you match Pantone Colours?",
-        a: "No. Shree Maruthi Printers is a CMYK offset printer, no Pantone PMS colours can be matched. All files should be created in CMYK. Files not in CMYK will be automatically converted.",
+        a: "No. Gokul Printers is a CMYK offset printer, no Pantone PMS colours can be matched. All files should be created in CMYK. Files not in CMYK will be automatically converted.",
       },
       {
         q: "What are the printing colour options 4C+0, 4C+1C, 4C+4C?",
@@ -182,7 +182,7 @@ const faqSections = [
         a: "If you want a horizontal card, provide all files horizontally. If vertical, provide all files vertically. The back design should be the result of flipping the front from left to right.",
       },
       {
-        q: "Does Shree Maruthi Printers guarantee deadlines or provide rush services?",
+        q: "Does Gokul Printers guarantee deadlines or provide rush services?",
         a: "No. All listed turnaround times are estimates. Gang printing does not allow us to review results until print is completed. No rush services are available. Clients must allow enough time for estimated turnaround plus possible delays.",
       },
       {
@@ -195,7 +195,7 @@ const faqSections = [
       },
       {
         q: "How much time is required for production?",
-        a: "Turnaround times are estimates. Shree Maruthi Printers does not guarantee deadlines and there is no rush service.",
+        a: "Turnaround times are estimates. Gokul Printers does not guarantee deadlines and there is no rush service.",
       },
       {
         q: "Is it possible to waive minimum quantity required for ordering?",
@@ -267,11 +267,11 @@ const faqSections = [
     faqs: [
       {
         q: "Can I cancel my order?",
-        a: "Due to the swift nature of our business, we process orders as soon as we receive them. No cancellations or refunds are available on orders that have gone to CTP. Shree Maruthi Printers is not responsible for any duplicated orders placed due to customer mistake.",
+        a: "Due to the swift nature of our business, we process orders as soon as we receive them. No cancellations or refunds are available on orders that have gone to CTP. Gokul Printers is not responsible for any duplicated orders placed due to customer mistake.",
       },
       {
         q: "Can I change my order?",
-        a: "Before Checkout / Payment: You can click the Bin icon near the product on your cart. After Checkout / Payment: Orders cannot be changed once placed. We run a gang printing service meaning many jobs run at once — we cannot stop or make changes during a print cycle. NOTE: Shree Maruthi Printers is not responsible for duplicated orders, incorrect files, or errors placed on our website.",
+        a: "Before Checkout / Payment: You can click the Bin icon near the product on your cart. After Checkout / Payment: Orders cannot be changed once placed. We run a gang printing service meaning many jobs run at once — we cannot stop or make changes during a print cycle. NOTE: Gokul Printers is not responsible for duplicated orders, incorrect files, or errors placed on our website.",
       },
     ],
   },

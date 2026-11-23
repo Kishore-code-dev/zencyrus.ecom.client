@@ -15,7 +15,7 @@ const CtaSection = () =>
               Ready to Elevate Your Brand?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-primary/80">
-              Join thousands of businesses who trust Shree Maruthi Printers for
+              Join thousands of businesses who trust Gokul Printers for
               their printing needs. Sign up today and get 15% off your first
               order.
             </p>

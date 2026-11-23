@@ -14,7 +14,7 @@ const ReturnCancellationPolicy = () =>
                     Policy for Return of Order
                 </span>
                 <p className="text-justify leading-8 mb-4">
-                    Shree Maruthi Printers makes its best possible effort to provide you
+                    Gokul Printers makes its best possible effort to provide you
                     an excellent online shopping experience. If you are still left wanting
                     on account of any issue, we are there to help you out in whichever
                     way we can. Yet, we do not provide the alternative to return orders as
@@ -24,7 +24,7 @@ const ReturnCancellationPolicy = () =>
                     However, if at all there is a Manufacturing defect, complete
                     assistance would be given to you for correcting the same.
                     <br />
-                    Shree Maruthi Printers does not refund, cancel or credit if the
+                    Gokul Printers does not refund, cancel or credit if the
                     Service failure or defect is caused, in whole or in part, by acts of
                     God, weather conditions, environmental or dangerous goods incidents,
                     perils of the air, public enemies, public authorities acting with
@@ -42,10 +42,10 @@ const ReturnCancellationPolicy = () =>
                     </a>{" "}
                     or you can drop an email at{" "}
                     <a
-                        href="mailto:support@shreemaruthiprinters.com"
+                        href="mailto:support@gokulprinters.com"
                         className="text-blue-600 underline"
                     >
-                        support@shreemaruthiprinters.com
+                        support@gokulprinters.com
                     </a>
                     .
                 </p>
@@ -66,16 +66,16 @@ const ReturnCancellationPolicy = () =>
                     Non Receipt of Payment
                 </span>
                 <p className="text-justify leading-8 mb-4">
-                    In case the payment for the order is not made, Shree Maruthi Printers
+                    In case the payment for the order is not made, Gokul Printers
                     will automatically cancel the order. An email notification is sent to
                     you when we cancel the order.
                     <br />
                     For cancellations, you may drop an email at{" "}
                     <a
-                        href="mailto:support@shreemaruthiprinters.com"
+                        href="mailto:support@gokulprinters.com"
                         className="text-blue-600 underline"
                     >
-                        support@shreemaruthiprinters.com
+                        support@gokulprinters.com
                     </a>{" "}
                     or call us at{" "}
                     <a href="tel:+914224229800" className="text-blue-600 underline">

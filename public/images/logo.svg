@@ -1,0 +1,15 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Gokul Printers</title>
+  <desc id="desc">An ISO 9001:2008 certified printing company</desc>
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="200" fill="#ffffff" />
+  <path d="M 35 145 L 75 80 L 115 120 L 155 65 L 195 145 Z" fill="url(#mountainGradient)" />
+  <text x="48" y="145" font-family="Poppins, Arial, sans-serif" font-size="62" font-weight="700" fill="#dc2626" letter-spacing="-4">Gp</text>
+  <text x="205" y="92" font-family="Poppins, Arial, sans-serif" font-size="44" font-weight="700" fill="#2563eb">Gokul Printers</text>
+  <text x="207" y="134" font-family="Poppins, Arial, sans-serif" font-size="16" font-weight="500" fill="#dc2626">AN ISO 9001 : 2008 Certified Company</text>
+</svg>

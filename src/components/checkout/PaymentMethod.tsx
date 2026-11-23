@@ -228,7 +228,7 @@ export default function PaymentMethod({
                         <AlertDialogTitle>Pick from Maruthi</AlertDialogTitle>
                         <AlertDialogDescription>
                             you have chose pick up from maruthi and you should
-                            collect the product from Shree Maruthi Printers
+                            collect the product from Gokul Printers
                             Coimbatore
                         </AlertDialogDescription>
                     </AlertDialogHeader>

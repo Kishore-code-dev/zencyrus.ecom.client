@@ -1,4 +1,10 @@
-import { LocalStorageEnum, NavigationEnum, NextStepEnum, type BaseResponse } from "@/types/api-action";
+import {
+  LocalStorageEnum,
+  NavigationEnum,
+  NextStepEnum,
+  type BaseResponse,
+} from "@/types/api-action";
+import { AUTH_STORAGE_KEY, notifyAuthStateChanged } from "@/config/auth-storage";
 import type { AxiosResponse } from "axios";
 import { useCallback } from "react";
 import { createSearchParams, useNavigate } from "react-router";
@@ -9,22 +15,34 @@ export function useApiAction()
 {
     const navigate = useNavigate()
     const { setDialogBox } = useGlobalAlertBox()
+
     const apiActionAsync = useCallback(async (axiosResponse: AxiosResponse) =>
     {
-        const { data }: { data: BaseResponse<any> } = axiosResponse
+        const { data }: { data: BaseResponse<unknown> } = axiosResponse
 
-        if (!data)
+        if (!data || !('isSuccess' in data) || !Array.isArray(data.actions))
         {
             return;
         }
 
-        if (!('isSuccess' in data))
+        // Authentication data must be available before a navigation action renders
+        // a protected route. Keep all other action ordering unchanged.
+        const orderedActions = [...data.actions].sort((first, second) =>
         {
-            return;
-        }
+            if (first.type === NextStepEnum.LOCALSTORAGE && second.type !== NextStepEnum.LOCALSTORAGE)
+            {
+                return -1;
+            }
 
+            if (second.type === NextStepEnum.LOCALSTORAGE && first.type !== NextStepEnum.LOCALSTORAGE)
+            {
+                return 1;
+            }
 
-        data.actions.forEach(async (action) => 
+            return 0;
+        });
+
+        for (const action of orderedActions)
         {
             const { type, step } = action;
 
@@ -39,8 +57,9 @@ export function useApiAction()
                 case NextStepEnum.NAVIGATION:
                     {
                         const { variant, baseUrl, path, state } = step
-                        const url = `${baseUrl}${path ? `/${path}` : ''}${state ? `?${createSearchParams(state)}` : ''}`
-                        // console.log('Navigating to:', url)
+                        const query = state ? createSearchParams(state).toString() : '';
+                        const url = `${baseUrl}${path ? `/${path}` : ''}${query ? `?${query}` : ''}`
+
                         switch (variant)
                         {
                             case NavigationEnum.INTERNAL:
@@ -73,7 +92,13 @@ export function useApiAction()
                         {
                             case LocalStorageEnum.SET:
                                 {
-                                    localStorage.setItem(propertyName, JSON.stringify(propertyValue))
+                                    const serializedValue = JSON.stringify(propertyValue)
+
+                                    if (serializedValue !== undefined)
+                                    {
+                                        localStorage.setItem(propertyName, serializedValue)
+                                    }
+
                                     break;
                                 }
                             case LocalStorageEnum.REMOVE:
@@ -82,16 +107,22 @@ export function useApiAction()
                                     break;
                                 }
                         }
+
+                        if (propertyName === AUTH_STORAGE_KEY)
+                        {
+                            notifyAuthStateChanged()
+                        }
                         break;
                     }
-                case NextStepEnum.DIALOGBOX: {
-                    const { action, message, icon } = step
-                    setDialogBox({ action, message, icon })
-                    break;
-                }
+                case NextStepEnum.DIALOGBOX:
+                    {
+                        const { action, message, icon } = step
+                        setDialogBox({ action, message, icon })
+                        break;
+                    }
             }
-        })
-    }, [])
+        }
+    }, [navigate, setDialogBox])
 
     return ({ apiActionAsync })
 }

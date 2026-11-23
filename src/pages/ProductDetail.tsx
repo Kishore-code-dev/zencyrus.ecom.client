@@ -231,8 +231,6 @@ export default function ProductDetail() {
     }
   }, [id, quantityId]);
 
-  const noOfUnits = useWatch<AddToCartItem>({ control, name: "noOfUnits" });
-
   useEffect(() => {
     setIsLoading(true);
     fetchProductDetails().finally(() => setIsLoading(false));

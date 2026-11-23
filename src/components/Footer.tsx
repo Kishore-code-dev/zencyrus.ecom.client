@@ -1,4 +1,3 @@
-import { useTheme } from "@/hooks/use-theme";
 import { Link } from "react-router";
 
 
@@ -6,7 +5,6 @@ const year = new Date().getFullYear()
 
 export function Footer()
 {
-  const { theme } = useTheme()
   return (
     <footer className="border-t border-border bg-card overflow-hidden">
       <div className="container mx-auto px-4 py-12 lg:px-18">
@@ -17,13 +15,13 @@ export function Footer()
               <img
                 loading="lazy"
                 decoding="async"
-                src={theme == "light" ? '/images/logo.light.png' : '/images/logo.dark.png'}
-                alt="Shree Maruthi Printers"
+                src="/images/logo.svg"
+                alt="Gokul Printers"
                 className="size-32 object-contain"
               />
               <div>
                 <h3 className="font-display text-lg font-bold">
-                  Shree Maruthi Printers
+                  Gokul Printers
                 </h3>
                 <p className="text-xs text-muted-foreground">
                   B2B Printing Solutions
@@ -144,10 +142,10 @@ export function Footer()
               <li className="flex items-start gap-2">
                 {/* <Mail className="text-accent" /> */}
                 <a
-                  href="mailto:info@shreemaruthiprinters.com"
+                  href="mailto:info@gokulprinters.com"
                   className="hover:text-foreground transition-colors"
                 >
-                  info@shreemaruthiprinters.com
+                  info@gokulprinters.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -173,7 +171,7 @@ export function Footer()
 
         <div className="mt-12 border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {year} Shree Maruthi Printers. All rights reserved.
+            © {year} Gokul Printers. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <Link

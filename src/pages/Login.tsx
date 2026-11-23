@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate, useSearchParams } from "react-router";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input"
@@ -13,21 +13,66 @@ import
   FormMessage,
 } from "@/components/ui/form";
 import { useForm, useFormContext } from "react-hook-form";
+import { useEffect } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAuth } from "@/hooks/use-auth";
 import PasswordInput from "@/components/ui/password-input";
-import { useTheme } from "@/hooks/use-theme";
-
 const formSchema = z.object({
   email: z.string().email("Invalid email address"),
   password: z.string().min(8, "Password must be at least 8 characters"),
 });
 
+function getSafeRedirectTarget(redirectTarget: string | null): string
+{
+  if (
+    !redirectTarget ||
+    !redirectTarget.startsWith("/") ||
+    redirectTarget.startsWith("//") ||
+    redirectTarget.includes("\\")
+  )
+  {
+    return "/";
+  }
+
+  try
+  {
+    const parsedTarget = new URL(redirectTarget, window.location.origin);
+
+    if (
+      parsedTarget.origin !== window.location.origin ||
+      parsedTarget.pathname === "/auth/login"
+    )
+    {
+      return "/";
+    }
+
+    return `${parsedTarget.pathname}${parsedTarget.search}${parsedTarget.hash}`;
+  }
+  catch
+  {
+    return "/";
+  }
+}
+
 export default function Login()
 {
   const navigate = useNavigate();
-  const { theme } = useTheme()
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const { isAuthenticated } = useAuth();
+  const redirectTarget = getSafeRedirectTarget(searchParams.get("redirect"));
+
+  useEffect(() =>
+  {
+    if (!isAuthenticated || location.pathname !== "/auth/login")
+    {
+      return;
+    }
+
+    navigate(redirectTarget, { replace: true });
+  }, [isAuthenticated, location.pathname, navigate, redirectTarget]);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -49,7 +94,7 @@ export default function Login()
                 Your Printing Partner
               </h2>
               <p className="mt-4 text-lg text-primary-foreground/80">
-                Join 10,000+ businesses that trust Shree Maruthi Printers for
+                Join 10,000+ businesses that trust Gokul Printers for
                 high-quality, reliable printing services.
               </p>
               <div className="mt-12 grid grid-cols-3 gap-6">
@@ -86,13 +131,10 @@ export default function Login()
               <img
                 loading="lazy"
                 decoding="async"
-                src={theme == "light" ? '/images/logo.light.png' : '/images/logo.dark.png'}
-                alt="Shree Maruthi Printers"
+                src="/images/logo.svg"
+                alt="Gokul Printers"
                 className="size-32 w-auto m-auto"
               />
-              {/* <h1 className="font-display text-xl font-bold">
-                Shree Maruthi Printers
-              </h1> */}
             </div>
             <h2 className="mt-8 font-display text-2xl font-bold">
               Sign in to your account
@@ -135,20 +177,29 @@ export default function Login()
   );
 }
 
-type LoginFormProps = {
-};
-
-function LoginForm({ }: LoginFormProps)
+function LoginForm()
 {
 
   const form = useFormContext<z.infer<typeof formSchema>>()
-
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { signInAsync } = useAuth()
+  const redirectTarget = getSafeRedirectTarget(searchParams.get("redirect"));
+
+  const handleSubmit = form.handleSubmit(async (values) =>
+  {
+    const isSignedIn = await signInAsync(values);
+
+    if (isSignedIn)
+    {
+      navigate(redirectTarget, { replace: true });
+    }
+  });
 
   return (
     <form
       className="mt-8 space-y-6"
-      onSubmit={form.handleSubmit(signInAsync)}
+      onSubmit={handleSubmit}
     >
       <div className="grid grid-cols-1 gap-2.5">
         <FormField

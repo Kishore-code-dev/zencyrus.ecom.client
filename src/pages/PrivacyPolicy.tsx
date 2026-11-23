@@ -13,10 +13,10 @@ export default function PrivacyPolicy()
                 </section>
                 <section className="p-10">
                     <p className="text-justify leading-8 mb-4">
-                        Shree Maruthi Printers values its customers and respects their
+                        Gokul Printers values its customers and respects their
                         privacy. We collect customer information in an effort to improve your
                         shopping experience and to communicate with you about our products,
-                        services, contests, and promotions. Shree Maruthi Printers recognizes
+                        services, contests, and promotions. Gokul Printers recognizes
                         that it must maintain and use customer information responsibly. We do
                         not sell or rent the information you provide to us online to third
                         parties. However, we do share your information with third parties
@@ -27,13 +27,13 @@ export default function PrivacyPolicy()
                         why we collect it, how we use it and when we share it with third
                         parties. Our policy also describes the choices you can make about how
                         we collect and use your information. If you have any questions about
-                        our privacy policy, please contact Shree Maruthi Printers customer
+                        our privacy policy, please contact Gokul Printers customer
                         service via email at{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         .
                     </p>
@@ -61,27 +61,27 @@ export default function PrivacyPolicy()
                         How Do We Use Your Information
                     </span>
                     <p className="text-justify leading-8 mb-4">
-                        When you make an online purchase from Shree Maruthi Printers, we use
+                        When you make an online purchase from Gokul Printers, we use
                         your information to process your order. We will also send you emails
                         to confirm your order, and we may need to contact you via phone,
                         postal mail or email if we have other questions regarding your order.
                         In addition, you will be automatically signed up to receive email
                         updates about our products, services, contests, and promotions.
                         <br />
-                        When you save your information with Shree Maruthi Printers, you will
+                        When you save your information with Gokul Printers, you will
                         also be automatically signed up to receive email updates. If you
                         participate in a contest or promotion (online or over the phone), you
                         may choose to receive email updates about our products, services,
                         contests, and promotions.
                         <br />
                         If at any time you would like us to remove you from our email or
-                        postal mailing lists, feel free to contact Shree Maruthi Printers
+                        postal mailing lists, feel free to contact Gokul Printers
                         customer service at{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         . Please be sure to include full name and any other relevant
                         information. If you have previously asked to be removed from our email
@@ -104,13 +104,13 @@ export default function PrivacyPolicy()
                         experience with us, and to communicate with you by email or postal
                         mail about our products, services, contests, and promotions that may
                         be of interest to you. If you do not want us to use your information
-                        as described above, please contact Shree Maruthi Printers service by
+                        as described above, please contact Gokul Printers service by
                         emailing{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         .
                     </p>
@@ -137,10 +137,10 @@ export default function PrivacyPolicy()
                         <br />
                         If prior to participating in a contest or promotion, you opted not to
                         receive information from us, you may still receive information from or
-                        about Shree Maruthi Printers in connection with the contest or
+                        about Gokul Printers in connection with the contest or
                         promotion if you choose to participate in it. You may opt not to
                         participate in these contests or promotions if you do not want to
-                        receive information about Shree Maruthi Printers or share your
+                        receive information about Gokul Printers or share your
                         information with us and the other companies sponsoring those contests
                         or promotions.
                         <br />
@@ -163,13 +163,13 @@ export default function PrivacyPolicy()
                         <br />
                         If at any time you would like us to remove you from our email or
                         postal mailing lists or if you do not want us to use your information
-                        to enhance your shopping experience, feel free to contact Shree
-                        Maruthi Printers customer service via email at{" "}
+                        to enhance your shopping experience, feel free to contact Gokul
+                        Printers customer service via email at{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         . Please be sure to include your email address and full name.
                     </p>
@@ -182,10 +182,10 @@ export default function PrivacyPolicy()
                         you prefer not to receive information from us, either through email,
                         postal mail or by phone, please let us know by sending us an email at{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         . Please note that such requests may take up to six to eight weeks to
                         become effective. In addition, if you ask us to remove your name and
@@ -206,7 +206,7 @@ export default function PrivacyPolicy()
                         personally identifiable information in your cookie.
                         <br />
                         We use cookies in order to improve your shopping experience. When you
-                        visit Shree Maruthi Printers, your cookie helps us keep track of your
+                        visit Gokul Printers, your cookie helps us keep track of your
                         order as you shop at our site. If you have saved your information with
                         us, your cookie allows us to recognize you when you return to our site
                         and provides you with access to your account information. If you saved
@@ -232,12 +232,12 @@ export default function PrivacyPolicy()
 
                     <p className="text-justify leading-8 mb-4">
                         If any questions or disputes of this Privacy Policy arise, please
-                        contact Shree Maruthi Printers at{" "}
+                        contact Gokul Printers at{" "}
                         <a
-                            href="mailto:support@shreemaruthiprinters.com"
+                            href="mailto:support@gokulprinters.com"
                             className="text-blue-600 underline"
                         >
-                            support@shreemaruthiprinters.com
+                            support@gokulprinters.com
                         </a>
                         , and we will do our best to answer or resolve your issue. You may
                         also choose to contact us at phone{" "}

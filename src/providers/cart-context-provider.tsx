@@ -84,7 +84,8 @@ export function CartProvider({ children }: CartProviderProps)
       otherSpecification: payload.otherSpecification,
       productId: payload.productId,
       quantityId: payload.productQuantityId,
-      customerId: ""
+      customerId: "",
+      noOfUnits: 1
     }
 
     return await addToCartItemAsync(cartItemPayload);

@@ -75,7 +75,7 @@ export const viewCart = (items: CheckoutProduct[], total: number) =>
 export const purchase = (items: CheckoutProduct[], total: number, shipping: number = 0) =>
 {
     event("purchase", {
-        affiliation: "Shree Maruthi Printers",
+        affiliation: "Gokul Printers",
 
         value: total,
 
