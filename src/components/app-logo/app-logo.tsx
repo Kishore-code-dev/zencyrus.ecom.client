@@ -1,26 +1,29 @@
 import { cn } from "@/lib/utils"
 import type { ComponentProps } from "react"
 
-interface AppLogoProps extends ComponentProps<'div'>
+interface AppLogoProps extends Omit<ComponentProps<"img">, "src" | "alt">
 {
 
 }
 
+/**
+ * Official Gokul Printers logo.
+ *
+ * The logo artwork is kept exactly as supplied (see /public/images/logo.png).
+ * The white plate is part of the artwork, so the rounded corners keep it tidy
+ * when the app is viewed in dark mode.
+ */
 export default function AppLogo({ className, ...props }: AppLogoProps)
 {
     return (
-        <div className={cn("flex items-center gap-2", className)} {...props}>
-            <img
-                loading="lazy"
-                decoding="async"
-                src="/images/logo.svg"
-                alt="Gokul Printers"
-                className="h-12 w-auto bg-cover"
-            />
-            <div className="hidden">
-                <h1 className="font-display text-xl font-bold text-foreground">Gokul Printers</h1>
-                <p className="text-xs text-muted-foreground">B2B Printing Solutions</p>
-            </div>
-        </div>
+        <img
+            src="/images/logo.png"
+            alt="Gokul Printers — AN ISO 9001:2008 Certified Company"
+            width={431}
+            height={120}
+            decoding="async"
+            className={cn("h-12 w-auto rounded-md bg-white", className)}
+            {...props}
+        />
     )
 }

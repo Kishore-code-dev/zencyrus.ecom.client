@@ -14,6 +14,7 @@ import
   type CarouselApi,
 } from "@/components/ui/carousel";
 import type { ImageOptionItem } from "@/types/common";
+import { demoCategoryGridItems } from "@/data/demo-data";
 
 interface CategoryGrid
 {
@@ -40,10 +41,11 @@ const CategoryGrid = () =>
         {
           setItems(response.data || []);
         }
-      } catch (error)
-      {
-        if (error instanceof AxiosError && error.response)
-        {
+      } catch (error) {
+        // Backend unreachable — use demo category items
+        if (!(error instanceof AxiosError && error.response)) {
+          setItems(demoCategoryGridItems);
+        } else if (error instanceof AxiosError && error.response) {
           await apiActionAsync(error.response);
         }
       }

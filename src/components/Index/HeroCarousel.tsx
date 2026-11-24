@@ -11,6 +11,7 @@ import { AxiosError } from "axios";
 import { useApiAction } from "@/hooks/use-api-action";
 import { useTheme } from "@/hooks/use-theme";
 import HeroSection from "@/components/Index/HeroSection";
+import { demoHeroBanners } from "@/data/demo-data";
 
 const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
@@ -44,7 +45,10 @@ const HeroCarousel = () => {
           setItems(response.data || []);
         }
       } catch (error) {
-        if (error instanceof AxiosError && error.response) {
+        // Backend unreachable — use demo hero banners
+        if (!(error instanceof AxiosError && error.response)) {
+          setItems(demoHeroBanners);
+        } else if (error instanceof AxiosError && error.response) {
           await apiActionAsync(error.response);
         }
       }

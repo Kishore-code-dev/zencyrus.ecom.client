@@ -6,6 +6,7 @@ import NavItemSkeleton from './nav-item-skeleton'
 import NavItemPopoverTrigger from './nav-item-popover-trigger'
 // import NavItemDropdownTrigger from './nav-item-dropdown-trigger'
 import type { ProductNavItem } from '@/types/nav-item'
+import { demoNavItems } from '@/data/demo-data'
 // import { Button } from '../ui/button'
 // import { ChevronLeft, ChevronRight } from 'lucide-react'
 // import { Ellipsis } from 'lucide-react'
@@ -40,7 +41,12 @@ export default function NavItem({ }: NavItemProps)
         }
       } catch (error)
       {
-        if (error instanceof AxiosError && error.response)
+        // Backend unreachable — use demo nav items
+        if (!(error instanceof AxiosError && error.response))
+        {
+          setItems(demoNavItems)
+        }
+        else if (error instanceof AxiosError && error.response)
         {
           await apiActionAsync(error.response)
         }

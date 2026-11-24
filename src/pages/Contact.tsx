@@ -6,7 +6,7 @@ import Contactform from "@/components/contact/Contactform";
 import ContactInfo from "@/components/contact/ContactInfo";
 
 const contactInfo = {
-  company: "SHREE MARUTHI PRINTERS",
+  company: "GOKUL PRINTERS",
   address:
     "427-A Bharathiyar Road, Opp. Womens Polytechnic, New Sidhapudur, Coimbatore - 641 044, Tamil Nadu, India",
   phones: [

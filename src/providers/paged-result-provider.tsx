@@ -1,6 +1,8 @@
 import { Checkbox } from '@/components/ui/checkbox'
 import { api } from '@/config/api'
 import { PagedResultReducer, initialValue } from '@/config/paged-result'
+import { products } from '@/data/products'
+import { demoOrders } from '@/data/demo-data'
 import { useApiAction } from '@/hooks/use-api-action'
 import type { RowData } from '@/types/common'
 import { PagedResultActionEnum, type PagedResultContextValue, type PagedResultProviderProps, type PagedResultRender, type PagedResultPayload } from '@/types/paged-result'
@@ -111,7 +113,58 @@ function PagedResultProvider({
                 }
             } catch (error)
             {
-                if (error instanceof AxiosError && error.response)
+                // Backend unreachable — fall back to local demo data
+                if (!(error instanceof AxiosError && error.response))
+                {
+                    // Choose demo dataset based on path
+                    const isOrderPath = path === "order"
+                    const allItems = isOrderPath ? demoOrders : products
+
+                    const search = (payload.searchString ?? "").toLowerCase()
+                    let filtered = allItems.filter((p: any) =>
+                        p.name.toLowerCase().includes(search) ||
+                        p.orderReferenceNumber?.toLowerCase().includes(search) ||
+                        p.description?.toLowerCase().includes(search)
+                    )
+
+                    // Apply column filters (simple match on any filter value)
+                    if (payload.columnFilters && payload.columnFilters.length > 0)
+                    {
+                        filtered = filtered.filter((p: any) =>
+                            payload.columnFilters!.every((f: any) =>
+                            {
+                                if (!f.value) return true
+                                const val = String(f.value.value ?? f.value).toLowerCase()
+                                return String(p.name ?? p.orderReferenceNumber ?? "").toLowerCase().includes(val) ||
+                                    String(p.description ?? "").toLowerCase().includes(val)
+                            })
+                        )
+                    }
+
+                    const pageSize = payload.pageSize || 10
+                    const pageNumber = payload.pageNumber == 0 ? 1 : payload.pageNumber
+                    const start = (pageNumber - 1) * pageSize
+                    const paginatedItems = filtered.slice(start, start + pageSize)
+                    const totalPages = Math.ceil(filtered.length / pageSize) || 1
+
+                    const localPagedResult = {
+                        items: paginatedItems as unknown as RowData[],
+                        totalItems: filtered.length,
+                        maxNavigationPages: 5,
+                        pageNumber,
+                        pageSize,
+                        totalPages,
+                        startPage: 1,
+                        endPage: Math.min(totalPages, 5),
+                        pageNumbers: Array.from({ length: Math.min(totalPages, 5) }, (_, i) => i + 1),
+                    }
+
+                    dispatch({ type: PagedResultActionEnum.UPDATE_PAGED_RESULT, payload: localPagedResult })
+                    dispatch({ type: PagedResultActionEnum.UPDATE_PAGED_RESULT_PAYLOAD, payload })
+                    setColumnFilters(payload.columnFilters)
+                    setSorting(payload.sorting)
+                }
+                else if (error instanceof AxiosError && error.response)
                 {
                     await apiActionAsync(error.response)
                 }

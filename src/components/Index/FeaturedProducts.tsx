@@ -1,10 +1,14 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router";
+import { ProductCard } from "@/components/Index/ProductCard";
+import { products } from "@/data/products";
+import type { ProductCatlog } from "@/types/product";
 
 const FeaturedProducts = () =>
 {
   const navigate = useNavigate();
+  const featured = products.slice(0, 4);
   return (
     <section className="bg-secondary/30 py-5">
       <div className="container mx-auto px-4 lg:px-18">
@@ -24,9 +28,13 @@ const FeaturedProducts = () =>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {/* {popularProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))} */}
+          {featured.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product as ProductCatlog}
+              viewMode="grid"
+            />
+          ))}
         </div>
       </div>
     </section>

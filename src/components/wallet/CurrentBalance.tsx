@@ -5,12 +5,13 @@ import type { WalletInfo } from '@/types/wallet';
 import { useApiAction } from '@/hooks/use-api-action';
 import { api } from '@/config/api';
 import { AxiosError } from 'axios';
+import { demoWalletBalance } from '@/data/demo-data';
 
 const CurrentBalance = () =>
 {
   const { apiActionAsync } = useApiAction()
   const [loading, startTransition] = useTransition()
-  const [walletInfo, setWalletInfo] = useState<WalletInfo>({ currentBalance: 0, totalAddedFund: 0, totalSpendFund: 0 })
+  const [walletInfo, setWalletInfo] = useState<WalletInfo>({ currentBalance: demoWalletBalance, totalAddedFund: 0, totalSpendFund: 0 })
 
   useEffect(() =>
   {
@@ -25,7 +26,12 @@ const CurrentBalance = () =>
         }
       } catch (error)
       {
-        if (error instanceof AxiosError && error.response)
+        // Backend unreachable — use demo wallet balance
+        if (!(error instanceof AxiosError && error.response))
+        {
+          setWalletInfo({ currentBalance: demoWalletBalance, totalAddedFund: 10000, totalSpendFund: 5897 })
+        }
+        else if (error instanceof AxiosError && error.response)
         {
           await apiActionAsync(error.response)
         }

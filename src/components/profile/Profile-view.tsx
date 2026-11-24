@@ -11,6 +11,7 @@ import UserAddressForm from "./user-address-form";
 import { Dialog, DialogContent, DialogHeader, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "../ui/button";
 import ChangePasswordForm from "./change-password-form";
+import { demoUserProfile } from "@/data/demo-data";
 
 
 
@@ -46,7 +47,29 @@ const ProfileView = () =>
         }
       } catch (error)
       {
-        if (error instanceof AxiosError && error.response)
+        // Backend unreachable — use demo user profile
+        if (!(error instanceof AxiosError && error.response))
+        {
+          setUserDetails({
+            email: demoUserProfile.email,
+            companyName: demoUserProfile.company,
+            gstNumber: "GST27ABCDE1234F1Z5",
+            memberSince: demoUserProfile.createdAt.toISOString(),
+            status: "Active",
+            mobileNo: "+91 9876543210",
+            addressLine1: demoUserProfile.address.address,
+            addressLine2: "",
+            country: "India",
+            city: demoUserProfile.address.city,
+            state: demoUserProfile.address.state,
+            district: "Coimbatore",
+            pincode: demoUserProfile.address.zip,
+            totalOrders: 5,
+            walletBalance: demoUserProfile.walletBalance,
+            activeQuotes: 0,
+          } as UserDetails)
+        }
+        else if (error instanceof AxiosError && error.response)
         {
           await apiActionAsync(error.response)
         }

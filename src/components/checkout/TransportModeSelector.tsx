@@ -6,7 +6,7 @@ import { useCheckout } from "@/hooks/use-chechout"
 
 const options = [
     {
-        label: "Pick from Maruthi",
+        label: "Pick from Gokul Printers",
         value: "f7ba2a38-0191-ab37-c57d-c65e0d95c45c",
         icon: Building2
     },

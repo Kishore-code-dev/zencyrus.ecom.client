@@ -1,19 +1,18 @@
 import { Link } from 'react-router';
+import AppLogo from '@/components/app-logo/app-logo';
 
 export default function LeftHeader()
 {
   return (
-    <Link to="/" className="flex items-center gap-2 shrink-0 ml-0 pl-0 ">
-      <img
-        loading="lazy"
-        decoding="async" src="/images/logo.svg"
-        alt="Gokul Printers"
-        className="size-32 w-auto"
+    <Link
+      to="/"
+      aria-label="Gokul Printers — Home"
+      className="flex items-center shrink-0 py-1.5 pl-3 pr-2 sm:pl-4"
+    >
+      <AppLogo
+        className="h-9 sm:h-10 md:h-12"
+        fetchPriority="high"
       />
-      <div className="hidden xl:block">
-        <h1 className="font-display text-xl font-bold text-foreground">Gokul Printers</h1>
-        <p className="text-xs text-muted-foreground">B2B Printing Solutions</p>
-      </div>
     </Link>
   );
 }

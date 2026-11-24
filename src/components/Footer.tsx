@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import AppLogo from "@/components/app-logo/app-logo";
 
 
 const year = new Date().getFullYear()
@@ -11,23 +12,7 @@ export function Footer()
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/images/logo.svg"
-                alt="Gokul Printers"
-                className="size-32 object-contain"
-              />
-              <div>
-                <h3 className="font-display text-lg font-bold">
-                  Gokul Printers
-                </h3>
-                <p className="text-xs text-muted-foreground">
-                  B2B Printing Solutions
-                </p>
-              </div>
-            </div>
+            <AppLogo className="h-12" loading="lazy" />
             <p className="w-full text-sm text-muted-foreground">
               30+ years. 14 national awards. 10,000+ printers served across India.
             </p>

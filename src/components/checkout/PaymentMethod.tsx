@@ -225,11 +225,10 @@ export default function PaymentMethod({
             <AlertDialog open={open} onOpenChange={setOpen}>
                 <AlertDialogContent>
                     <AlertDialogHeader>
-                        <AlertDialogTitle>Pick from Maruthi</AlertDialogTitle>
+                        <AlertDialogTitle>Pick from Gokul Printers</AlertDialogTitle>
                         <AlertDialogDescription>
-                            you have chose pick up from maruthi and you should
-                            collect the product from Gokul Printers
-                            Coimbatore
+                            You have chosen pick up from Gokul Printers and you should
+                            collect the product from Gokul Printers, Coimbatore.
                         </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>

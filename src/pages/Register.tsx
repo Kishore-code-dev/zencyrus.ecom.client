@@ -38,6 +38,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Link } from "react-router";
+import AppLogo from "@/components/app-logo/app-logo";
 import { useAuth } from "@/hooks/use-auth";
 import AddressPicker from "@/components/address-picker/address-picker";
 import PasswordInput from "@/components/ui/password-input";
@@ -147,17 +148,8 @@ export default function Register() {
           </Button>
 
           <div className="mb-2">
-            <div className="flex items-center gap-3">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="/images/logo.svg"
-                alt="Gokul Printers"
-                className="size-32 w-auto m-auto"
-              />
-              {/* <h1 className="font-display text-xl font-bold">
-                Gokul Printers
-              </h1> */}
+            <div className="flex justify-center">
+              <AppLogo className="h-16 sm:h-20" fetchPriority="high" />
             </div>
             <h2 className="mt-8 font-display text-2xl font-bold">Register</h2>
             <p className="mt-2 text-sm text-muted-foreground">
